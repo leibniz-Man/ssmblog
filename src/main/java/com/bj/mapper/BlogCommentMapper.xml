@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bj.mapper.BlogCommentMapper">
+
+    <select id="queryByBlogId" resultType="com.bj.pojo.BlogComment">
+        select * from blog_comment
+        where blogid=#{id}
+    </select>
+
+    <delete id="deletecomment" parameterType="com.bj.pojo.BlogComment">
+        delete from blog_comment
+        where id=#{id}
+    </delete>
+</mapper>

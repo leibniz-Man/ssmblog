@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bj.mapper.UserMapper">
+    <select id="select" resultType="com.bj.pojo.User">
+        select * from user
+        where username=#{username}
+        and password = #{password}
+    </select>
+
+    <insert id="insert" parameterType="com.bj.pojo.User">
+        insert into user(username, password,vip,ip) value (#{username},#{password},'您是普通用户',#{ip})
+    </insert>
+
+    <select id="finduser" resultType="com.bj.pojo.User">
+        select * from user
+    </select>
+
+    <select id="checkvip" resultType="com.bj.pojo.User">
+        select vip from user
+        where vip=#{vip}
+    </select>
+</mapper>
