@@ -1,0 +1,1 @@
+INSERT INTO myblog.blog_comment (id, blogid, usercontent, author, createdate) VALUES (17, 1, '写的不错', '吕浩成', '2019-03-02 08:52:05');
