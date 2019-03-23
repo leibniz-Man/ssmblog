@@ -16,10 +16,10 @@
 </head>
 <body>
 
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" href="homepage_blog.jsp">吕浩成的个人博客</a>
+            <a class="navbar-brand">吕浩成的个人博客</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -27,8 +27,8 @@
             <ul class="nav navbar-nav">
                 <li class="active"><a href="${pageContext.request.contextPath}/blog/tohomepage">主页</a></li>
                 <li><a href="${pageContext.request.contextPath}/info/main">博客文章与评论</a></li>
-                <li><a href="#">占位</a></li>
-                <li><a href="#">占位</a></li>
+                <li><a href="${pageContext.request.contextPath}/board/toboard">聊天区</a></li>
+                <li><a href="email_nei.jsp">个人邮箱</a></li>
 
             </ul>
 
@@ -43,6 +43,6 @@
 </nav>
 <div class="text-center">删除成功！</div>
 
-    <a href="${pageContext.request.contextPath}/info/main">点击返回主页</a>
+<a href="${pageContext.request.contextPath}/info/main" class="text-center">点击返回主页</a>
 </body>
 </html>

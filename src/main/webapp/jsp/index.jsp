@@ -30,10 +30,10 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a href="jsp/login.jsp">登录<span class="sr-only">(current)</span></a></li>
-                <li><a href="jsp/regist.jsp">注册</a></li>
-                <li><a href="jsp/message_board_wai.jsp">留言板<small>(无需登录即可使用)</small></a></li>
-                <li><a href="jsp/email_wai.jsp">个人邮箱<small>(登录后可使用)</small></a></li>
+                <li><a href="login.jsp">登录<span class="sr-only">(current)</span></a></li>
+                <li><a href="regist.jsp">注册</a></li>
+                <li><a href="message_board_wai.jsp">留言板<small>(无需登录即可使用)</small></a></li>
+                <li><a href="email_wai.jsp">个人邮箱<small>(登录后可使用)</small></a></li>
             </ul>
 
             <%--搜索栏--%>
@@ -55,12 +55,12 @@
 <br>
 <div class="text-center"><h2>您还未登录</h2></div><br><br><br>
 <div class="container">
-    <a href="jsp/login.jsp"><button type="button" class="btn btn-success btn-lg btn-block">登录</button></a>
+    <a href="login.jsp"><button type="button" class="btn btn-success btn-lg btn-block">登录</button></a>
     <br>
     <br>
     <br>
     <br>
-    <a href="jsp/regist.jsp"><button type="button" class="btn btn-info btn-lg btn-block">注册</button></a>
+    <a href="regist.jsp"><button type="button" class="btn btn-info btn-lg btn-block">注册</button></a>
 </div>
 <script>
     var search = document.getElementById("search1");

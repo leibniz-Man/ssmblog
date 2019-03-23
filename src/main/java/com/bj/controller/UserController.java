@@ -55,6 +55,12 @@ public class UserController {
 
     @RequestMapping("/tohomepage")
     public String tohomepage(){
-        return "homepage";
+        return "forward:/blog/finduser/{vip}";
     }
+
+    @RequestMapping("/quit")
+    public String quit(){
+        return "redirect:/jsp/index.jsp";
+    }
+
 }

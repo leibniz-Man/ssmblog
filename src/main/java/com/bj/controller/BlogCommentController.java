@@ -32,5 +32,4 @@ public class BlogCommentController {
         blogCommentService.deletecomment(id);
         return "deletecommentsuccess";
     }
-
 }

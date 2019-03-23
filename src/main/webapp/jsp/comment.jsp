@@ -13,10 +13,10 @@
 </head>
 <body>
 
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" href="homepage_blog.jsp">吕浩成的个人博客</a>
+            <a class="navbar-brand">吕浩成的个人博客</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -24,8 +24,8 @@
             <ul class="nav navbar-nav">
                 <li class="active"><a href="${pageContext.request.contextPath}/blog/tohomepage">主页</a></li>
                 <li><a href="${pageContext.request.contextPath}/info/main">博客文章与评论</a></li>
-                <li><a href="#">占位</a></li>
-                <li><a href="#">文章搜索栏:</a></li>
+                <li><a href="${pageContext.request.contextPath}/board/toboard">聊天区</a></li>
+                <li><a href="email_nei.jsp">个人邮箱</a></li>
 
             </ul>
 
@@ -49,7 +49,7 @@
 <table class="table table-striped table-bordered table-hover">
     <thead>
     <tr>
-        <th colspan=4>
+        <th colspan=5>
             <h2>评论<a href="${pageContext.request.contextPath}/info/main">返回文章查询页</a></h2>
         </th>
     </tr>
@@ -58,6 +58,7 @@
         <th>评论内容</th>
         <th>评论用户</th>
         <th>评论日期</th>
+        <th>操作</th>
     </tr>
     </thead>
     <tbody>

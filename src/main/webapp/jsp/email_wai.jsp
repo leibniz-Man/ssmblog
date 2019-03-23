@@ -1,21 +1,21 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: AERO
-  Date: 2019/2/18
-  Time: 13:15
+  Date: 2019/3/23
+  Time: 7:51
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>首页</title>
+    <title>Title</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
 </head>
 <body>
-
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -30,10 +30,10 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a href="jsp/login.jsp">登录<span class="sr-only">(current)</span></a></li>
-                <li><a href="jsp/regist.jsp">注册</a></li>
-                <li><a href="jsp/message_board_wai.jsp">留言板<small>(无需登录即可使用)</small></a></li>
-                <li><a href="jsp/email_wai.jsp">个人邮箱<small>(登录后可使用)</small></a></li>
+                <li><a href="login.jsp">登录<span class="sr-only">(current)</span></a></li>
+                <li><a href="regist.jsp">注册</a></li>
+                <li><a href="message_board_wai.jsp">留言板<small>(无需登录即可使用)</small></a></li>
+                <li  class="active"><a href="email_wai.jsp">个人邮箱<small>(登录后可使用)</small></a></li>
             </ul>
 
             <%--搜索栏--%>
@@ -41,49 +41,20 @@
                 <div class="form-group">
                     <input type="text" class="form-control" placeholder="Search">
                 </div>
-                <button type="submit" class="btn btn-default" id="search">搜索！</button>
+                <button type="submit" class="btn btn-default">搜索！</button>
             </form>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a id="context">联系制作人</a></li>
-            </ul>
+            <%--<ul class="nav navbar-nav navbar-right">
+                <li><a href="#">联系制作人</a></li>
+            </ul>--%>
         </div>
     </div>
 </nav>
 <br>
 <br>
 <br>
+<h2 class="text-center">您还未登录，无法使用邮箱</h2>
 <br>
-<div class="text-center"><h2>您还未登录</h2></div><br><br><br>
-<div class="container">
-    <a href="jsp/login.jsp"><button type="button" class="btn btn-success btn-lg btn-block">登录</button></a>
-    <br>
-    <br>
-    <br>
-    <br>
-    <a href="jsp/regist.jsp"><button type="button" class="btn btn-info btn-lg btn-block">注册</button></a>
-</div>
-<script>
-    var search = document.getElementById("search1");
-    var context = document.getElementById("context");
-    var personemail = document.getElementById("personemail");
-    search.onclick=function (){
-        searchalert();
-    };
-    function searchalert() {
-        alert("您还没有登录，请登录后再使用此功能")
-    }
-    context.onclick=function(){
-        contextalert();
-    };
-    function contextalert(){
-        alert("联系电话：13436936618"+"邮箱：luihaocheng@126.com")
-    }
-    personemail.onclick=function(){
-        personemailclick();
-    };
-    function personemailclick(){
-        alert("登录后可使用")
-    }
-</script>
+<br>
+<h2 class="text-center"><a href="login.jsp">点击去登陆↓</a></h2>
 </body>
 </html>

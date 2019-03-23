@@ -20,4 +20,5 @@ public interface UserService {
     List<User> finduser();
 
     Object checkvip(String vip);
+
 }

@@ -31,20 +31,8 @@
             <ul class="nav navbar-nav">
                 <li class="active"><a href="login.jsp">登录<span class="sr-only">(current)</span></a></li>
                 <li><a href="regist.jsp">注册</a></li>
-                <li><a href="#">暂未开放</a></li>
-                <li><a href="#">暂未开放</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">暂未开放<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">One more separated link</a></li>
-                    </ul>
-                </li>
+                <li><a href="message_board_wai.jsp">留言板<small>(无需登录即可使用)</small></a></li>
+                <li><a href="email_wai.jsp">个人邮箱<small>(登录后可使用)</small></a></li>
             </ul>
 
             <%--搜索栏--%>
@@ -54,40 +42,42 @@
                 </div>
                 <button type="submit" class="btn btn-default">搜索！</button>
             </form>
-            <ul class="nav navbar-nav navbar-right">
+            <%--<ul class="nav navbar-nav navbar-right">
                 <li><a href="#">联系制作人</a></li>
-            </ul>
+            </ul>--%>
         </div>
     </div>
 </nav>
-<h1 class="col-sm-offset-5">登录页</h1>
+<h1 class="text-center">登录页</h1>
+<br>
 <br>
 <br>
 <br>
 <form class="form-horizontal" action="${pageContext.request.contextPath}/blog/login" method="post">
     <div class="form-group">
-        <label for="inputEmail3" class="col-sm-4 control-label">用户名:</label>
-        <div class="col-sm-3">
+        <label for="inputEmail3" class="col-sm-5 control-label">用户名:</label>
+        <div class="col-sm-2">
             <input type="text" class="form-control" id="inputEmail3" placeholder="请输入用户名" name="username">
         </div>
     </div>
+    <br>
     <div class="form-group">
-        <label for="inputPassword3" class="col-sm-4 control-label">密码:</label>
-        <div class="col-sm-3">
+        <label for="inputPassword3" class="col-sm-5 control-label">密码:</label>
+        <div class="col-sm-2">
             <input type="password" class="form-control" id="inputPassword3" placeholder="请输入密码" name="password">
         </div>
     </div>
     <div class="form-group">
-        <div class="col-sm-offset-4 col-sm-4">
+        <div class="col-sm-offset-5 col-sm-4">
             <div class="checkbox">
                 <label>
-                    <input type="checkbox"> 记住我
+                    <input type="checkbox">记住我
                 </label>
             </div>
         </div>
     </div>
     <div class="form-group">
-        <div class="col-sm-offset-4 col-sm-4">
+        <div class="col-sm-offset-5 col-sm-4">
             <button type="submit" class="btn btn-success">点击我登录！</button>
             还没有注册？<a href="regist.jsp">点击我去注册</a>
         </div>

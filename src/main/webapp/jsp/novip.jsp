@@ -12,6 +12,6 @@
 </head>
 <body>
     您不是管理员!
-    <a href="${pageContext.request.contextPath}/blog/login">返回首页</a>
+    <a href="${pageContext.request.contextPath}/blog/quit">返回登录页</a>
 </body>
 </html>

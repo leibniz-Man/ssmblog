@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bj.mapper.BlogBoardMapper">
+    <select id="findmessage" resultType="com.bj.pojo.BlogBoard">
+        select * from blog_board order by date asc
+    </select>
+    <insert id="insertmessage" parameterType="com.bj.pojo.BlogBoard">
+        insert into blog_board(id, message, date, username) values (#{id},#{message},#{date},#{username})
+    </insert>
+</mapper>

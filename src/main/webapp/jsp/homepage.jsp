@@ -17,10 +17,10 @@
 </head>
 <body>
 
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" href="homepage_blog.jsp">吕浩成的个人博客</a>
+            <a class="navbar-brand">吕浩成的个人博客</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -28,8 +28,8 @@
             <ul class="nav navbar-nav">
                 <li class="active"><a href="${pageContext.request.contextPath}/blog/tohomepage">主页</a></li>
                 <li><a href="${pageContext.request.contextPath}/info/main">博客文章与评论</a></li>
-                <li><a href="#">占位</a></li>
-                <li><a href="#">占位</a></li>
+                <li><a href="${pageContext.request.contextPath}/board/toboard">聊天区</a></li>
+                <li><a href="${pageContext.request.contextPath}/image/toimage">个人邮箱</a></li>
 
             </ul>
 
@@ -43,6 +43,11 @@
     </div>
 </nav>
 
+<br>
+<br>
+<br>
+<br>
+<br>
 <div class="text-center"><h2>${user1.vip}</h2></div>
 <form action="${pageContext.request.contextPath}/blog/finduser/${user1.vip}" class="text-center">
     <input class="text-center" type="submit" value="点击刷新所有用户名单">
@@ -72,6 +77,5 @@
         </tbody>
     </table>
 </div>
-
 </body>
 </html>

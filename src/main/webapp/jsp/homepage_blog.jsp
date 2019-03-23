@@ -13,19 +13,19 @@
 </head>
 <body>
 
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" href="homepage_blog.jsp">吕浩成的个人博客</a>
+            <a class="navbar-brand">吕浩成的个人博客</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="${pageContext.request.contextPath}/blog/tohomepage">主页</a></li>
-                <li><a href="${pageContext.request.contextPath}/info/main">博客文章与评论</a></li>
-                <li><a href="#">占位</a></li>
-                <li><a href="#">占位</a></li>
+                <li><a href="${pageContext.request.contextPath}/blog/tohomepage">主页</a></li>
+                <li  class="active"><a href="${pageContext.request.contextPath}/info/main">博客文章与评论</a></li>
+                <li><a href="${pageContext.request.contextPath}/board/toboard">聊天区</a></li>
+                <li><a href="${pageContext.request.contextPath}/image/toimage">个人邮箱</a></li>
 
             </ul>
 
@@ -45,6 +45,11 @@
         </div>
     </div>
 </nav>
+<br>
+<br>
+<br>
+<br>
+<br>
 <div class="container">
 <table class="table table-striped table-bordered table-hover">
     <thead>
